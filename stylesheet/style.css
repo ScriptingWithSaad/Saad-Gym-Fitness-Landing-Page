@@ -1,0 +1,491 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    background: url("/assets/images/pexels-pixabay-416809.jpg") no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+
+*::selection {
+    background-color: rgb(38, 255, 0);
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+.logo {
+    margin-left: -10px;
+    margin-top: -30px;
+}
+
+.logo img {
+    height: 130px;
+    padding: 2px 4px;
+    margin: -5px -5px;
+    padding-left: 50px;
+}
+
+.logo div {
+    padding: 2px 2px;
+    text-align: center;
+    margin: -35px 15px;
+}
+
+.logo div a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+.logo div a:hover {
+    color: rgb(38, 255, 0);
+    cursor: pointer;
+}
+
+.navigationbar {
+    display: flex;
+    align-items: flex-end;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+.navigationbar ul {
+    display: flex;
+}
+
+.navigationbar ul li {
+    list-style: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.navigationbar ul li a {
+    margin: 32px 2px;
+    display: block;
+    padding: 0px 22px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Bellefair', serif, 'Josefin Sans', sans-serif, 'Poiret One', sans-serif;
+}
+
+.navigationbar ul li a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
+    background-color: rgb(38, 255, 0);
+}
+
+/* Call to Action */
+.callaction {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: center;
+}
+
+.callaction .btn {
+    margin-left: -12px;
+    margin-right: 20px;
+    padding: 1px 17px;
+    background-color: rgb(255, 0, 0);
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+.callaction .btn:hover {
+    background-color: rgb(38, 255, 0);
+}
+
+.btn a {
+    color: rgb(255, 255, 255);
+    font-family: 'Bellefair', serif, 'Josefin Sans', sans-serif, 'Poiret One', sans-serif;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.btn a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+/* Home Section */
+.home {
+    border: 2px solid #504e4e;
+    background-color: rgb(198, 181, 181);
+    margin: 60px 70px;
+    padding: 35px 60px;
+    width: 410px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home h1 {
+    text-align: center;
+    margin-bottom: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.home h1:hover {
+    cursor: default;
+}
+
+.form-group {
+    padding: 5px 38px;
+}
+
+input {
+    padding: 3px 60px;
+    width: 180px;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Bellefair', serif, 'Josefin Sans', sans-serif, 'Poiret One', sans-serif;
+    color: black;
+}
+
+.submit {
+    margin: 8px 10px;
+}
+
+.submit:hover {
+    background-color: rgb(255, 0, 0);
+    text-decoration: underline;
+    color: white;
+}
+
+/* Cards Section */
+.cardstext {
+    background-color: #3b3a3a;
+    padding: 18px;
+    display: flex;
+    color: white;
+    cursor: default;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cardstext:hover {
+    color: rgb(38, 255, 0);
+    text-decoration: underline;
+}
+
+.cards-section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    cursor: default;
+    font-size: 0.86rem;
+    background-color: black;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.cards {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards a {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.cards a:hover {
+    color: rgb(38, 255, 0);
+}
+
+.cards img {
+    width: 180px;
+}
+
+.cards:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    text-decoration: underline;
+}
+
+#box-11 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Zooming Effect on Cards */
+.cards h1,
+.cards img {
+    width: 235px;
+    transition: transform 0.3s;
+}
+
+.cards h1:hover,
+.cards img:hover {
+    transform: scale(1.05);
+}
+
+/* Trainer Section */
+.trainer {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+#box-11 {
+    width: 180px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.trainertext {
+    background-color: #3b3a3a;
+    padding: 18px;
+    display: flex;
+    color: white;
+    cursor: default;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 15px 0px;
+}
+
+.trainer h1 a {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+#box-11 h1 a:hover {
+    color: rgb(38, 255, 0);
+}
+
+.trainertext:hover {
+    color: rgb(38, 255, 0);
+    text-decoration: underline;
+}
+
+/* Clients Section */
+.ourclients {
+    background-color: black;
+    color: white;
+    margin-top: -10px;
+}
+
+.ourclients h1 {
+    background-color: #3b3a3a;
+    padding: 18px;
+    display: flex;
+    color: white;
+    cursor: default;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.ourclients h1:hover {
+    color: rgb(38, 255, 0);
+    text-decoration: underline;
+}
+
+/* Section Box 12 */
+#box-12 {
+    width: 800px;
+    position: relative;
+}
+
+#box-12 h2 {
+    margin: -160px 140px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#box-12 img {
+    width: 300px;
+    margin: 30px 30px;
+}
+
+/* Section Box 13 */
+#box-13 {
+    width: 1160px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#box-13 h2 {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#box-13 img {
+    width: 300px;
+    margin: 280px 30px;
+    position: relative;
+    left: 890px;
+}
+
+/* Section Box 14 */
+#box-14 {
+    width: 800px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    top: -145px;
+}
+
+#box-14 h2 {
+    position: absolute;
+    bottom: 0px;
+    left: 355px;
+    right: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#box-14 img {
+    width: 300px;
+    margin: 0px 30px;
+}
+
+/* Section Box 15 */
+#box-15 {
+    width: 1133px;
+    position: relative;
+    top: -100px;
+}
+
+#box-15 h2 {
+    position: absolute;
+    bottom: -12%;
+    left: 62%;
+    transform: translateX(-50%);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#box-15 img {
+    width: 300px;
+    position: relative;
+    top: 30px;
+    left: 930px;
+}
+
+/* Section Box 16 */
+#box-16 {
+    width: 800px;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#box-16 h2 {
+    position: absolute;
+    bottom: 62px;
+    left: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#box-16 img {
+    width: 300px;
+    margin-bottom: 160px;
+    margin-left: 30px;
+}
+
+/* Contact Us Section */
+.contact-section h1 {
+    background-color: #3b3a3a;
+    padding: 18px;
+    display: flex;
+    color: white;
+    cursor: default;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.7rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contact-section h1:hover {
+    color: rgb(38, 255, 0);
+    text-decoration: underline;
+}
+
+.contactus::before {
+    content: "";
+    position: absolute;
+    background: url("contact us 2.jpg");
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.contactus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px;
+}
+
+.contactus label {
+    font-size: 1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.contactus-form {
+    margin: 7px 0px;
+    width: 460px;
+}
+
+.contactus input,
+.contactus textarea {
+    width: -webkit-fill-available;
+    padding: 7px 2px;
+}
+
+/* Footer */
+.footerwebsite {
+    background-color: rgb(213, 213, 213);
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+}
