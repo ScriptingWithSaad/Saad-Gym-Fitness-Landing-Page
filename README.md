@@ -1,5 +1,5 @@
 # Saad-Gym-Fitness-Landing-Page
-I am creating this website with HTML, Css.
+I am creating this Saad Gym Fitness Landing Page with HTML, Css.
 
-click on this link to try out Saad Gym Fitness Landing Page:
+Click On This Link To Try Out Saad Gym Fitness Landing Page:
 https://scriptwithsaad.github.io/Saad-Gym-Fitness-Landing-Page/
